@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VideoJS Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <h1>Brightcove Player Test</h1>
+        <div id="video-wrapper">
+            <video id="video-player" 
+                   data-account="1371335702" 
+                   data-player="fc65f50d-6821-4f2c-8a91-ab504caead29" 
+                   data-video-id="ref:1231936" 
+                   data-embed="default"
+                   data-setup='{"techOrder": ["html5", "hls", "flash"], "preload": "none"}'
+                   class="video-js" controls>
+            </video>
+        </div>
+        
+        <button>Dispose &amp; Remove Video</button>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <!-- Player without IMA3-Plugin      
+        <script src="http://players.brightcove.net/1371335702/20006658-4a66-4809-ac94-9c40e5f54b4c_default/index.js"></script>
+        -->
+        <!-- Player with IMA3-Plugin -->
+        <script src="http://players.brightcove.net/1371335702/fc65f50d-6821-4f2c-8a91-ab504caead29_default/index.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
